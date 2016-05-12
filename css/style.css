@@ -2,10 +2,18 @@ html, body {
   overflow-x:hidden;
 }
 body {
-  
+  font-family: 'Alegreya Sans', Helvetica, Arial, sans-serif;
 }
 h1, h2, h3, h4, h5, h6 {
-  
+  font-family: 'Alegreya Sans', Helvetica, Arial, sans-serif;
+}
+h1 {
+  font-weight: 100;
+}
+
+a{
+  font-family: 'Alegreya Sans', Helvetica, Arial, sans-serif;
+  text-decoration: none;
 }
 
 /* GRID */
@@ -59,12 +67,96 @@ h1, h2, h3, h4, h5, h6 {
 
 /* HEADER */
 header {
+  background:url("../images/bg/header_bg.jpg");
+  background-size:cover;
+  width:100%;
+  height:100px;
+  position:relative;
+}
+header .logo {
+  margin:20px;
+  display:inline-block;
+}
+header nav ul {
+  list-style-type: none;
+}
+header nav ul li {
+  display: inline-block;
+  margin:20px;
+}
+header nav ul li a {
+  color:#FFF;
+}
+.right {
+  display: inline-block;
+  float:right;
+}
 
+main {
+  background:url("../images/bg/textured_bg.jpg") no-repeat;
+  background-size:cover;
+  height:100vh;
+  text-align: center;
 }
 
 /* BUTTONS */
 .btn {
-  
+  background: #EA6C51;
+  box-shadow: inset 0px 1px 3px 0px rgba(0,0,0,0.50), inset 3px 1px 3px 0px rgba(0,0,0,0.50);
+  border-radius: 12px;
+  border:1px solid transparent;
+  color:#FFF;
+}
+.btn.round {
+  height:105px;
+  width:105px;
+  border-radius: 100%;
+  display: block;
+  text-align: center;
+  margin:20px auto 0;
+}
+
+/* FORMS */
+input[type="text"] {
+  background: #FFFFFF;
+  border: 1px solid #D8D8D8;
+  border-radius: 12px;
+  padding:0px 20px;
+  color: #EA6C51;
+  font-family: 'Alegreya Sans', Helvetica, Arial, sans-serif;
+  font-weight:400;
+  text-align: center;
+}
+::-webkit-input-placeholder {
+   color: #EA6C51;
+   font-family: 'Alegreya Sans', Helvetica, Arial, sans-serif;
+   font-weight:400;
+   text-align: center;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+   color: #EA6C51;
+   font-family: 'Alegreya Sans', Helvetica, Arial, sans-serif;
+   font-weight:400;
+   text-align: center;  
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   color: #EA6C51;
+   font-family: 'Alegreya Sans', Helvetica, Arial, sans-serif;
+   font-weight:400;
+   text-align: center;  
+}
+
+:-ms-input-placeholder {  
+   color: #EA6C51;
+   font-family: 'Alegreya Sans', Helvetica, Arial, sans-serif;
+   font-weight:400;
+   text-align: center;  
+}
+.create {
+  width:670px;
+  height:60px;
 }
 
 /* FOOTER */

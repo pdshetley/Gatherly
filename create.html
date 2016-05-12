@@ -7,22 +7,46 @@
   <title>Gatherly</title>
 
   <!-- Google Fonts -->
-  <link href="" rel="stylesheet" type="text/css">
+  <link href='https://fonts.googleapis.com/css?family=Alegreya+Sans:400,300,700' rel='stylesheet' type='text/css'>
 
   <!-- CSS -->
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/slick.css">
+  <link rel="stylesheet" href="css/slick-theme.css">
 
 </head>
 <body>
   <!-- HEADER -->
   <header>
+    <div class="container">
+      <nav>
+        <a class="logo" href=""><img src="images/logo.png" /></a>
+        <ul class="right">
+          <li><a href="">Our Story</a></li>
+          <li><a href="">Sign Out</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
   <!-- MAIN CONTENT -->
   <main role="main">
-    <section>
-      
+    <section class="createStep_one">
+      <div class="container">
+        <h1>Hi Amanda! Let’s Create a Gathering.</h1>
+        <form>
+          <input class="create" type="text" placeholder="Start by naming your gathering.">
+          <button class="btn round">Let's Go</button>
+        </form>
+        <h2>Or, choose one of these to get you started.</h2>
+        <div class="slick">
+          <div><a href=""><img src="images/types/anniversary.jpg" /><span>anniversary</span></a></div>
+          <div><a href=""><img src="images/types/brunch.jpg" /><span>brunch</span></a></div>
+          <div><a href=""><img src="images/types/dinner.jpg" /><span>dinner</span></a></div>
+          <div><a href=""><img src="images/types/barbecue.jpg" /><span>barbecue</span></a></div>
+        </div>
+      </div>
     </section>
   </main>
 
@@ -30,5 +54,10 @@
   <footer>
     
   </footer>
+
+  <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  <script type="text/javascript" src="js/slick.js"></script>
+  <script type="text/javascript" src="js/app.js"></script>
 </body>
 </html>
