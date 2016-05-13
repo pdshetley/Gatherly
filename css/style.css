@@ -3,14 +3,14 @@ html, body {
 }
 body {
   font-family: 'Alegreya Sans', Helvetica, Arial, sans-serif;
-  background:url("../images/bg/textured_bg.jpg") no-repeat;
+  background:url("../images/bg/textured_2_bg.jpg") no-repeat;
   background-size:cover;
   height:100vh;
   text-align: center;
   position: relative;
 }
 body.secondary {
-  background:url("../images/bg/form_bg.jpg") no-repeat;
+  background:url("../images/bg/form_2_bg.jpg") no-repeat;
   background-size:cover;
   height:100vh;
   text-align: center;
@@ -56,6 +56,10 @@ a{
   position: relative;
   min-height: 1px;
   margin: 0 2% 20px;
+}
+
+.card {
+  
 }
 
 @media (min-width: 768px) {
