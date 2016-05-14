@@ -1,26 +1,37 @@
 html, body {
   overflow-x:hidden;
 }
-body {
+body, body.tertiary {
   font-family: 'Alegreya Sans', Helvetica, Arial, sans-serif;
-  background:url("../images/bg/textured_2_bg.jpg") no-repeat;
+  background-image:url("../images/bg/textured_2_bg.jpg");
+  background-repeat: no-repeat;
+  background-position: top center;
   background-size:cover;
-  height:100vh;
   text-align: center;
   position: relative;
+  height:100vh;
+  background-attachment: scroll;
 }
 body.secondary {
-  background:url("../images/bg/form_2_bg.jpg") no-repeat;
+  background-image:url("../images/bg/form_2_bg.jpg");
+  background-repeat: no-repeat;
+  background-position: top center;
   background-size:cover;
   height:100vh;
   text-align: center;
   position: relative;
+  background-attachment: scroll;
 }
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Alegreya Sans', Helvetica, Arial, sans-serif;
 }
 h1 {
   font-weight: 100;
+}
+h2 {
+  font-size: 24px;
+  color: #4A4A4A;
+  letter-spacing: 0px;
 }
 h3 {
   font-size: 18px;
@@ -59,7 +70,7 @@ a{
 }
 
 .card {
-  
+
 }
 
 @media (min-width: 768px) {
@@ -94,8 +105,9 @@ header {
   width:100%;
   height:100px;
   position:relative;
+  border-bottom:1px solid #FFF;
 }
-.secondary header {
+.secondary header, .tertiary header {
   background:#EA6C51; 
 }
 header .logo {
@@ -123,13 +135,49 @@ header nav ul li a {
 }
 
 .form {
-  opacity: 0.8;
-  background: #FFFFFF;
+  background: rgba(255,255,255,0.8);
   border-radius: 12px;
   padding:40px;
   text-align:center;
   margin:40px auto;
   width:600px;
+}
+.form ul {
+  list-style-type: none;
+  padding:0;
+  margin:0 -40px;
+}
+.form ul li {
+  position:relative;
+  display: inline-block;
+  width:24%;
+}
+.form ul li div {
+  position: absolute;
+  background: rgba(74,74,74,0.5);
+  left:0;
+  right:0;
+  bottom:5px;
+  color:#FFF;
+  padding:10px 0;
+}
+.form ul li div input[type="checkbox"] {
+  display: block;
+  margin:0 auto;
+  -webkit-appearance: none;
+  background:#FFF;
+  height:20px;
+  width:20px;
+  border-radius:50%;
+  border:1px solid #FFF;
+}
+.form ul li div input[type="checkbox"]:active, .form ul li div input[type="checkbox"]:checked {
+  background:#EA6C51;
+  border:1px solid #FFF;
+}
+.form ul li img {
+  max-width:100%;
+  height:auto;
 }
 .card {
   background: #FFFFFF;
@@ -140,14 +188,16 @@ header nav ul li a {
 /* BUTTONS */
 button, .btn, input[type="submit"] {
   background: #EA6C51;
+  
   box-shadow: inset 0px 1px 3px 0px rgba(0,0,0,0.50), inset 3px 1px 3px 0px rgba(0,0,0,0.50);
   border-radius: 12px;
   border:1px solid transparent;
   color:#FFF;
   padding:10px 20px;
+  display: inline-block;
 }
 button:hover, .btn:hover, input[type="submit"]:hover {
-
+  background: #79496A;
 }
 button.round, .btn.round {
   width:65px;
@@ -216,7 +266,7 @@ input[type="text"] {
 footer {
   position: absolute;
   right:0;
-  bottom:0;
+  bottom:-50px;
   width: 100%;
 }
 footer ul {
